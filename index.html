@@ -32,11 +32,12 @@
         <nav>
             <div class="navbar bg-[#FFF9F4] shadow-md font-Sora">
                 <div class="navbar-start ml-2">
-                    <div>
+                    
                         <img class="w-8" src="./assets/logo-header.png" alt="">
-                    </div>
-                 
+                    
+                 <div class="hidden md:flex">
                   <a class="btn btn-ghost text-md gap-0">Browse <span class="text-warning">4</span>Pets</a>
+                </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -47,17 +48,111 @@
                     <li><a>Contact us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end gap-2">
-                  <a class="btn btn-ghost"> <i class="fa-solid fa-bell"></i></a> 
-                  <a class="btn btn-ghost"><i class="fa-solid fa-magnifying-glass"></i></a>  
-                    <a class="btn btn-outline btn-warning">Login</a>
-                  <a class="btn btn-warning text-black">Register</a>
-                </div>
+                <div class="navbar-end">
+                    <!-- Dropdown menu for small screens, hidden on large screens -->
+                    <div class="dropdown dropdown-end lg:hidden">
+                      <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16" />
+                        </svg>
+                      </div>
+                      <ul class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>Item 1</a></li>
+                        <li>
+                          <a>Parent</a>
+                          <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                          </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                      </ul>
+                    </div>
+                  
+                    <!-- Button icons for large screens, hidden on small screens -->
+                    <div class="hidden lg:flex gap-2">
+                      <a class="btn btn-ghost"> <i class="fa-solid fa-bell"></i></a> 
+                      <a class="btn btn-ghost"><i class="fa-solid fa-magnifying-glass"></i></a>  
+                      <a class="btn btn-outline btn-warning">Login</a>
+                      <a class="btn btn-warning text-black">Register</a>
+                    </div>
+                  </div>
+                  
               </div>
         </nav>
+<!--Pamper Your Cat Section-->
+<section class="mx-4 my-6 lg:mx-16 lg:mt-10 lg:mb-10 ">
+  <div class="pt-15"><p class="font-ADLaMDisplay text-2xl ">Pamper Your Pet,<br>Because They Deserve <br>the Bes</p>
+  <p class="font-Sora text-sm pt-5">Discover a world of treats,toys and essentials handpicked for <br> your furry friends.Shop now And make tails wag with joy! </p>
+  <button class="font-Sora btn btn-warning text-black mt-4 ">Find a pet</button>
+  </div>
+  
+  <img class="w-260" src="./assets/cat-big.png" alt="">
+
+
+</section>
     </header>
     <!--Main Section-->
-    <main></main>
+    <main>
+      <!--Browse By Categories Section-->
+<section class="mx-4 my-6 lg:mx-16 lg:mt-10 lg:mb-10">
+<h1 class="font-ADLaMDisplay ">Browse By Categories</h1>
+<!--Card Section-->
+<section class="flex grid grid-cols-2 lg:grid-cols-6 lg:grid-rows-1 gap-4 lg:gap-6 mt-6">
+  <!--Card-01-->
+  <div class="bg-[#F9DF8A] flex flex-col p-4  items-center rounded-xl">
+    <div class="bg-white rounded-full h-16 w-16 flex justify-center items-center  "><img class=" w-10 h-10 "  src="./assets/dog-cartoon.png" alt=""></div>
+   
+   
+       <h5 class="font-sora font-bold">Dog</h5>
+    <p class="font-Sora text-sm">3 Items</p>
+  </div>
+  <!--Card-02-->
+  <div class="bg-[#F9DF8A] flex flex-col p-4  items-center rounded-xl">
+    <div class="bg-white rounded-full h-16 w-16 flex justify-center items-center  "><img class=" w-10 h-10 "  src="./assets/fish-cartoon.png" alt=""></div>
+   
+   
+       <h5 class="font-sora font-bold">Fish</h5>
+    <p class="font-Sora text-sm">3 Items</p>
+  </div>
+  <!--Card-03-->
+  <div class="bg-[#F9DF8A] flex flex-col p-4  items-center rounded-xl">
+    <div class="bg-white rounded-full h-16 w-16 flex justify-center items-center  "><img class=" w-10 h-10 "  src="./assets/cat-cartoon.png" alt=""></div>
+   
+   
+       <h5 class="font-sora font-bold">Cat</h5>
+    <p class="font-Sora text-sm">3 Items</p>
+  </div>
+  <!--Card-04-->
+  <div class="bg-[#F9DF8A] flex flex-col p-4  items-center rounded-xl">
+    <div class="bg-white rounded-full h-16 w-16 flex justify-center items-center  "><img class=" w-10 h-10 "  src="./assets/bird-cartoon.png" alt=""></div>
+   
+   
+       <h5 class="font-sora font-bold">Bird</h5>
+    <p class="font-Sora text-sm">3 Items</p>
+  </div>
+  <!--Card-05-->
+  <div class="bg-[#F9DF8A] flex flex-col p-4  items-center rounded-xl">
+    <div class="bg-white rounded-full h-16 w-16 flex justify-center items-center  "><img class=" w-10 h-10 "  src="./assets/cute-pet-small.png" alt=""></div>
+   
+   
+       <h5 class="font-sora font-bold">Small pet</h5>
+    <p class="font-Sora text-sm">3 Items</p>
+  </div>
+  <!--Card-06-->
+  <div class="bg-[#F9DF8A] flex flex-col p-4  items-center rounded-xl">
+    <div class="bg-white rounded-full h-16 w-16 flex justify-center items-center  "><img class=" w-10 h-10 "  src="./assets/rabbit-cartoon.png" alt=""></div>
+   
+   
+       <h5 class="font-sora font-bold">Rabbit</h5>
+    <p class="font-Sora text-sm">3 Items</p>
+  </div>
+</section>
+
+
+</section>
+      
+</main>
     <!--Footer Section-->
     <footer></footer>
 
