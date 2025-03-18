@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet-Shop</title>
+    <!-- Fav icon -->
+    <link rel="icon" type="image/x-icon" href="./assets/logo-header.png">
     <!--Font Awesome Link-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!--Goggle font CDN-->
@@ -33,7 +35,7 @@
             <div class="navbar bg-[#FFF9F4] shadow-md font-Sora">
                 <div class="navbar-start ml-2">
                     
-                        <img class="w-8" src="./assets/logo-header.png" alt="">
+                        <img class="w-8 " src="./assets/logo-header.png" alt="">
                     
                  <div class="hidden md:flex">
                   <a class="btn btn-ghost text-md gap-0">Browse <span class="text-warning">4</span>Pets</a>
@@ -73,21 +75,31 @@
                     <div class="hidden lg:flex gap-2">
                       <a class="btn btn-ghost"> <i class="fa-solid fa-bell"></i></a> 
                       <a class="btn btn-ghost"><i class="fa-solid fa-magnifying-glass"></i></a>  
-                      <a class="btn btn-outline btn-warning">Login</a>
-                      <a class="btn btn-warning text-black">Register</a>
+                      <a class="btn btn-outline btn-warning  hover:border-orange-400 hover:text-white hover:bg-orange-500 transition-all duration-300 ease-in-out 
+                      transform hover:scale-105 hover-glow 
+                      hover:shadow-[0_0_15px_5px_rgba(255,127,0,0.5)] 
+                      transition-all duration-300 ease-in-out">Login</a>
+                      <a class="btn btn-warning text-black hover:bg-red-500 transition-all duration-300 ease-in-out 
+                      transform hover:scale-105 hover-glow  hover:shadow-[0_0_15px_5px_rgba(220,20,60,0.5)] hover:text-white  ">Register</a>
                     </div>
                   </div>
                   
               </div>
         </nav>
 <!--Pamper Your Cat Section-->
-<section class="mx-4 my-6 lg:mx-25 lg:mt-8 lg:mb-10 ">
-  <div class="pt-15"><p class="font-ADLaMDisplay text-2xl ">Pamper Your Pet,<br>Because They Deserve <br>the Bes</p>
+<section class="mx-4 mt-6 mb-20 lg:mx-25 lg:mt-8 lg:mb-10 flex flex-col lg:flex lg:flex-row ">
+  <div class="pt-15 ">
+    <p class="font-ADLaMDisplay text-2xl ">Pamper Your Pet,<br>Because They Deserve <br>the Bes</p>
   <p class="font-Sora text-sm pt-5">Discover a world of treats,toys and essentials handpicked for <br> your furry friends.Shop now And make tails wag with joy! </p>
-  <button class="font-Sora btn btn-warning text-black mt-4 ">Find a pet</button>
+  <button class="btn   btn-warning font-Sora text-black hover:bg-red-500 transition-all duration-300 ease-in-out 
+  transform hover:scale-105 hover-glow  hover:shadow-[0_0_15px_5px_rgba(220,20,60,0.5)] hover:text-white mt-3 ">
+  Find a Pet
+</button>
   </div>
   
-  <img class="w-260" src="./assets/cat-big.png" alt="">
+  <div class="">
+    <img src="./assets/cat-big.png" alt="">
+  </div>
 
 
 </section>
@@ -161,7 +173,10 @@
     <div class="pt-4 pl-2 pr-4 lg:flex-auto">
       <h1 class="font-bold">T-Shirt For Dogs</h1>
       <p class="text-sm mt-4">Discover a world of treats,toys and <br> essentials handpicked for</p>
-      <button class="btn btn-white mt-3">Shop Now</button>
+      <button class="btn btn-outline bg-white text-purple-500 hover:border-purple-500 hover:text-white hover:bg-purple-600 transition-all duration-300 ease-in-out 
+      transform hover:scale-105 hover-glow 
+      hover:shadow-[0_0_15px_5px_rgba(128,0,128,0.5)] 
+      transition-all duration-300 ease-in-out mt-3">Shop Now</button>
     </div>
     <div class=" flex-auto">
       <img class="w-60" src="./assets/cute-pet-mid.png" alt="">
@@ -298,7 +313,7 @@
 
 </section>
 <!--Everyday Low Price section-->
-<section class="mx-4 my-6 lg:mx-25 lg:mt-10 lg:mb-10">
+<section class="mx-4 mt-6 mb-90 lg:mx-25 lg:mt-10 lg:mb-80">
   <h1 class="font-ADLaMDisplay text-xl font-bold mb-8 ">Everyday Low price</h1>
   <div class="flex flex-col gap-4 lg:flex-row lg:gap-5">
     <!--Large Card-->
@@ -308,7 +323,7 @@
       <div class="flex-auto">
         <h6 class="font-Sora text-sm ">Under Price</h6>
         <p class="text-lg font-ADLaMDisplay">Pet Grooming Mitt</p>
-        <p class="text-white text-md">(Easy Hair Removal)</p>
+        <p class="text-white text-md font-Sora">(Easy Hair Removal)</p>
         <h1 class="font-ADLaMDisplay font-bold text-3xl">$7.99</h1>
 
       </div>
@@ -334,7 +349,57 @@
       
 </main>
     <!--Footer Section-->
-    <footer></footer>
+    <footer class="footer sm:footer-horizontal bg-gradient-to-r from-cyan-400 to-sky-500 text-base-content p-10 relative ">
+      <!-- card section -->
+       <section class=" bg-gradient-to-r from-purple-50 to-pink-50 shadow-xl rounded-2xl flex flex-col lg:flex lg:flex-row justify-center items-center text-center absolute bottom-120 left-[80px] right-14 lg:left-[300px]  lg:-bottom-1 lg:bottom-90  lg:right-[200px] lg:gap-x-10 z-90">
+<!-- image part -->
+ <div>
+  <img class="w-[240px] pt-5" src="./assets/cute-pet-mid.png" alt=""></div>
+ <!-- text part -->
+  <div class="flex flex-col gap-y-4">
+  <h1 class="font-ADLaMDisplay font-bold text-lg">Get Pawsome News!</h1>
+  <p class="text-sm px-6 font-Sora">Exclusive training tips, ticks, product deals and more.</p>
+  <input class="mx-6 lg:mr-4" type="email" placeholder="Enter email.." name="" id="">
+  <button class="btn btn-warning text-black font-Sora hover:bg-red-500 transition-all duration-300 ease-in-out 
+  transform hover:scale-105 hover-glow  hover:shadow-[0_0_15px_5px_rgba(220,20,60,0.5)] hover:text-white  w-25 ml-30 lg:ml-6 mb-5 lg:mb-0">Subscribe</button>
+  </div>
+       </section>
+      <nav class="pt-[300px] lg:pt-[300px] gap-4 font-Sora">
+        
+          <div class="flex text-center items-center gap-2">
+            <img class="w-8" src="./assets/logo-footer.png" alt="">
+          <p class="font-bold text-lg ">Browse<span class="text-warning">4</span>Pets</p>
+          </div>
+          <div>
+            <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>friends</p>
+          </div>
+        
+      </nav>
+      <nav class="lg:pt-[300px] font-semibold font-Sora">
+        
+        <a class="link link-hover">Find a Pet</a>
+        <a class="link link-hover">Breeds</a>
+        <a class="link link-hover">Contact Us</a>
+        
+      </nav>
+      <nav class=" lg:pt-[300px]">
+        <h6 class="footer-title font-bold font-Sora">Follow Us</h6>
+        <div class="grid grid-flow-col gap-4">
+          <a href="https://www.facebook.com" target="_blank" class="text-gray-700 hover:text-blue-500">
+            <i class="fab fa-facebook-f text-3xl"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" class="text-gray-700 hover:text-red-500">
+            <i class="fab fa-youtube text-3xl"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="text-gray-700 hover:text-orange-500">
+            <i class="fab fa-instagram text-3xl"></i>
+        </a>
+        <a href="https://www.github.com" target="_blank" class="text-gray-700 hover:text-black">
+            <i class="fab fa-github text-3xl"></i>
+        </a>
+        </div>
+      </nav>
+    </footer>
 
 </body>
 </html>
